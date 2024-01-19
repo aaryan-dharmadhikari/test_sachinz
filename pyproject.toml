@@ -1,0 +1,15 @@
+[project]
+name = "myapp"
+version = "1.0.0"
+description = "Flask template application"
+readme = "README.md"
+dependencies = [
+    "flask",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["error"]
